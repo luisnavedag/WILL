@@ -13,7 +13,15 @@ function numeroSimetrico(num) {
   // numeroSimetrico(11711) devuelve true
 
   // Tu código:
-
+  let string = num.toString()
+  let longitud = string.length;
+  for (i = 0; i < Math.floor(longitud / 2); i++){
+      if (string[0] === string[longitud - 1]){
+          return true;
+      } else {
+          return false;
+      }
+  }
 }
 
 // No modifiques nada debajo de esta linea //
